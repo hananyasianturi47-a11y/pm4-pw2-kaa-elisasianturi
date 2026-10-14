@@ -1,0 +1,164 @@
+/* 1. Reset & Font Dasar */
+.modern-footer {
+  background-color: #0f172a; /* Warna dasar gelap premium */
+  color: #94a3b8;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 60px 20px 30px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 2. Layout Grid untuk Konten */
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* 3. Gaya Teks & Brand */
+.footer-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Aksen Merah pada Brand */
+.footer-brand span {
+  color: #ef4444;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 4. Menu Navigasi & Hover Warna-Warni */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Variasi hover sesuai warna pilihan */
+.link-kuning:hover {
+  color: #eab308;
+}
+.link-biru:hover {
+  color: #3b82f6;
+}
+.link-merah:hover {
+  color: #ef4444;
+}
+
+/* 5. Media Sosial & Tombol Interaktif */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Efek warna tombol saat disentuh cursor */
+.social-icon.biru {
+  color: #3b82f6;
+}
+.social-icon.biru:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.social-icon.merah {
+  color: #ef4444;
+}
+.social-icon.merah:hover {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.social-icon.kuning {
+  color: #eab308;
+}
+.social-icon.kuning:hover {
+  background-color: #eab308;
+  color: #0f172a;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* 6. Hak Cipta Bagian Bawah */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.footer-bottom-links a {
+  color: #64748b;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif untuk HP (Layar Kecil) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom-links a {
+    margin: 0 10px;
+  }
+}
